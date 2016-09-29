@@ -10,9 +10,9 @@ app.get('/', function (req, res) {
 });
 
 app.get('/arcticle-one', function (req, res) {
-  res.sendFile("articleone");
+  res.send("articleone");
 });
-app;
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
